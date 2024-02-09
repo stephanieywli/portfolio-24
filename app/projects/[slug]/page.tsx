@@ -35,10 +35,10 @@ export default function Page(props: any) {
           </h1>
           <p className="leading-tight pt-2">{proj.data.subtitle}</p>
           <div className="flex flex-row gap-6 font-medium uppercase w-full">
-            {proj.data.links.map((link) => (
+            {proj.data.links.map((link: any) => (
               <a
                 key={link}
-                href={Object.values(link)}
+                href={Object.values<string>(link).toString()}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="flex flex-row items-center hover:opacity-70 hover:italic"
@@ -49,7 +49,7 @@ export default function Page(props: any) {
             ))}
           </div>
           <div className="flex flex-col w-full py-6 ">
-            {proj.data.details.map((x) => (
+            {proj.data.details.map((x: any) => (
               <div
                 key={x}
                 className="flex flex-row py-2 justify-between border-b border-b-off-white-400 capitalize last:border-b-0"
@@ -60,7 +60,7 @@ export default function Page(props: any) {
             ))}
           </div>
           <div className="hidden lg:flex flex-row w-[25vw] justify-between self-end absolute bottom-0 mb-8 mt-20">
-            {proj.data.screens.map((img) => (
+            {proj.data.screens.map((img: any) => (
               <Image
                 key={img}
                 src={img}
