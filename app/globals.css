@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-hero-pattern {
+    opacity: 0.045;
+}
+
+#about-section-title {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    color: #f6f6f6;
+}

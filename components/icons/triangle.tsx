@@ -1,0 +1,15 @@
+import Image from "next/image";
+import React from "react";
+
+export default function Triangle() {
+  return (
+    <Image
+      src="/icons/triangle.svg"
+      alt=""
+      width={10}
+      height={10}
+      style={{ width: "0.7rem", height: "0.7rem" }}
+      className="self-start my-[0.4rem]"
+    ></Image>
+  );
+}

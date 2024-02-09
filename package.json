@@ -1,0 +1,43 @@
+{
+  "name": "portfolio-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm .next -r && next dev"
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.8",
+    "@react-three/fiber": "^8.15.15",
+    "@studio-freight/lenis": "^1.0.33",
+    "@studio-freight/react-lenis": "^0.0.43",
+    "framer-motion": "^10.18.0",
+    "framer-motion-3d": "^11.0.3",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.5",
+    "luxon": "^3.4.4",
+    "markdown-to-jsx": "^7.4.1",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.160.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
