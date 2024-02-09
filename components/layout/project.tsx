@@ -23,7 +23,7 @@ const fadeIn = {
   closed: { opacity: 0 },
 };
 
-export default function Project({ project }) {
+export default function Project({ project }: any) {
   const [isActive, setIsActive] = useState(false);
   const { title1, title2, src, type, details, slug } = project;
   const lenis = useLenis(({ scroll }) => {});
