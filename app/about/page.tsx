@@ -105,7 +105,7 @@ export default function Page() {
               <div
                 className="font-garamond font-light 
               text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]
-              italic text-off-white leading-none -mt-4 whitespace-nowrap"
+              italic text-off-white leading-none -mt-4 lg:whitespace-nowrap"
               >
                 <h1 className="max-w-fit">Designer by Instinct,</h1>
                 <h1 className="max-w-fit">Developer by Design.</h1>
@@ -148,7 +148,6 @@ export default function Page() {
               sizes="100vw"
               style={{ width: "auto", height: "100%" }}
               priority={true}
-              placeholder="blur"
               className="lg:mt-5"
             ></Image>
           </div>
