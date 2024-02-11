@@ -141,7 +141,7 @@ export default function Page() {
           </div>
           <div className="flex lg:w-full items-center h-[50vh] lg:h-[60vh] justify-center my-10 lg:my-0">
             <Image
-              src="/Profile8.png"
+              src="/Profile8.webp"
               alt=""
               width={0}
               height={0}
