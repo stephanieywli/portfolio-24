@@ -147,6 +147,7 @@ export default function Page() {
               height={0}
               style={{ width: "auto", height: "100%", objectFit: "contain" }}
               priority={true}
+              quality={100}
               className="lg:mt-5"
             ></Image>
           </div>
