@@ -79,7 +79,7 @@ export default function Page(props: any) {
         id="content-right"
         className="flex flex-col gap-4 w-full lg:w-[65vw] items-start justify-start pb-44 lg:py-44 px-10 lg:px-20 lg:absolute lg:right-0 lg:top-0 bg-grey-100"
       >
-        <div className="flex w-full h-fit overflow-hidden items-center justify-start">
+        <div className="flex w-full h-fit items-center justify-start">
           <Image
             src={proj.data.hero}
             alt=""

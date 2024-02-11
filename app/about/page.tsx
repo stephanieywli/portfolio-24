@@ -89,7 +89,7 @@ export default function Page() {
       <Loader />
       <div
         id="content"
-        className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] overflow-hidden relative"
+        className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] relative"
       >
         <Cursor />
         <section

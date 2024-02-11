@@ -26,12 +26,12 @@ export default function Home() {
       </AnimatePresence>
       <div
         id="content"
-        className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] overflow-hidden relative"
+        className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] relative"
       >
         <Cursor />
         <section
           id="hero-section"
-          className="flex flex-col items-center justify-center w-screen h-screen max-w-[100%] overflow-hidden relative"
+          className="flex flex-col items-center justify-center w-screen h-screen max-w-[100%] relative"
         >
           <div
             id="hero-wrap"
