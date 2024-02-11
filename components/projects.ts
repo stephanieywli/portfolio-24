@@ -23,7 +23,7 @@ export const projects = [
       src: "/projects/rbc/hero.svg",
       industry: "Fintech",
       type: "Design, AR",
-      details: "C++, COLLADA DOM, Three.Js, Patrol JS",
+      details: "C++, Unity, COLLADA DOM, Three.Js, Patrol JS",
       slug: "rbc-greensense",
     },
   ];

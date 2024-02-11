@@ -10,7 +10,7 @@ links:
   ]
 details:
   [
-    { framework: "A-Frame" },
+    { framework: "A-Frame, Unity" },
     { industry: "Finance, AR" },
     { libraries: "Three.js, PatrolJS" },
   ]
