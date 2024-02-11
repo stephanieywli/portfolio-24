@@ -99,9 +99,9 @@ export default function Page() {
             </div>
             <div className="flex flex-col justify-between w-fit lg:w-[40vw] h-full">
               <div
-                className="font-garamond font-light
+                className="font-garamond font-light 
               text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]
-              italic text-off-white leading-none -mt-4"
+              italic text-off-white leading-none -mt-4 whitespace-nowrap"
               >
                 <h1 className="max-w-fit">Designer by Instinct,</h1>
                 <h1 className="max-w-fit">Developer by Design.</h1>
@@ -135,13 +135,15 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex w-[65vw] lg:w-fit justify-end self-end xl:pr-20">
+          <div className="flex w-[65vw] h-[60vh] lg:h-[70vh] justify-end self-end xl:pr-20 my-10 lg:my-0">
             <Image
               src="/1.svg"
               alt=""
               width={0}
               height={0}
+              sizes="100vw"
               style={{ width: "auto", height: "100%" }}
+              className="lg:mt-5"
             ></Image>
           </div>
         </section>
