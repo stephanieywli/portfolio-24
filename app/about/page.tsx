@@ -149,8 +149,6 @@ export default function Page() {
               style={{ width: "auto", height: "100%", objectFit: "contain" }}
               quality={100}
               priority={true}
-              placeholder="blur"
-              blurDataURL="/blur.png"
               className="lg:mt-5 rounded-full -z-10"
             ></Image>
           </div>
