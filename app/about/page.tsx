@@ -139,7 +139,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex lg:w-[40vw] items-center h-[50vh] lg:h-[60vh] justify-end self-end xl:pr-32 my-10 lg:my-0">
+          <div className="flex lg:w-full border items-center h-[50vh] lg:h-[60vh] justify-center my-10 lg:my-0">
             <Image
               src="/Profile8.png"
               alt=""
@@ -150,7 +150,7 @@ export default function Page() {
               quality={100}
               priority={true}
               placeholder="blur"
-              blurDataURL="/Profile8.png"
+              blurDataURL="/blur.png"
               className="lg:mt-5 rounded-full -z-10"
             ></Image>
           </div>
