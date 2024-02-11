@@ -59,7 +59,7 @@ export default function Page(props: any) {
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex flex-row w-[25vw] justify-between self-end absolute bottom-0 mb-8 mt-20">
+          <div className="hidden lg:flex flex-row w-[25vw] gap-3 justify-end self-end absolute bottom-0 mb-8 mt-20">
             {proj.data.screens.map((img: any) => (
               <Image
                 key={img}

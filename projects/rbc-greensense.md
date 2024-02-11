@@ -14,13 +14,7 @@ details:
     { industry: "Finance, AR" },
     { libraries: "Three.js, PatrolJS" },
   ]
-screens:
-  [
-    "/projects/rbc/1.svg",
-    "/projects/rbc/2.svg",
-    "/projects/rbc/3.svg",
-    "/projects/rbc/4.svg",
-  ]
+screens: ["/projects/rbc/1.svg", "/projects/rbc/2.svg"]
 
 hero: "/projects/rbc/main.svg"
 ---
