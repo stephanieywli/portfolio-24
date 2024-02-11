@@ -96,7 +96,7 @@ export default function Page() {
           id="background-section"
           className="flex flex-col gap-6 lg:flex-row w-screen lg:h-screen pt-[20vh] pb-[10vh] px-4 items-end justify-between text-grey-red"
         >
-          <div className="flex flex-col lg:flex-row items-start gap-6">
+          <div className="flex flex-col lg:flex-row lg:w-[60vw] items-start gap-6">
             <div id="about-section-title" className="gap-2">
               <Triangle />
               Background
@@ -111,7 +111,7 @@ export default function Page() {
                 <h1 className="max-w-fit">Developer by Design.</h1>
               </div>
               <div className="flex flex-col lg:flex-row gap-6 pt-20 text-grey justify-between w-full h-max tracking-tight leading-snug">
-                <div className="flex flex-col justify-between italic ">
+                <div className="flex flex-col justify-between italic">
                   <p>
                     <Typewriter
                       words={["Hons. Neuroscience (B.Sc.)"]}
@@ -139,16 +139,19 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex h-[60vh] lg:h-[70vh] justify-end self-end xl:pr-20 my-10 lg:my-0">
+          <div className="flex lg:w-[40vw] items-center h-[50vh] lg:h-[60vh] justify-end self-end xl:pr-32 my-10 lg:my-0">
             <Image
-              src="/1.svg"
+              src="/Profile8.png"
               alt=""
               width={0}
               height={0}
+              sizes="100vw"
               style={{ width: "auto", height: "100%", objectFit: "contain" }}
-              priority={true}
               quality={100}
-              className="lg:mt-5"
+              priority={true}
+              placeholder="blur"
+              blurDataURL="/Profile8.png"
+              className="lg:mt-5 rounded-full -z-10"
             ></Image>
           </div>
         </section>
