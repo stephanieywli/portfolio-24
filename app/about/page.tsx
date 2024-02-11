@@ -149,7 +149,7 @@ export default function Page() {
               style={{ width: "auto", height: "100%", objectFit: "contain" }}
               quality={100}
               priority={true}
-              className="lg:mt-5 rounded-full -z-10"
+              className="lg:mt-5 rounded-full -z-10 xl:-mr-32 xl:-mb-10"
             ></Image>
           </div>
         </section>
