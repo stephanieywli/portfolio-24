@@ -139,14 +139,13 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex w-[65vw] h-[60vh] lg:h-[70vh] justify-end self-end xl:pr-20 my-10 lg:my-0">
+          <div className="flex h-[60vh] lg:h-[70vh] justify-end self-end xl:pr-20 my-10 lg:my-0">
             <Image
               src="/1.svg"
               alt=""
               width={0}
               height={0}
-              sizes="100vw"
-              style={{ width: "auto", height: "100%" }}
+              style={{ width: "auto", height: "100%", objectFit: "contain" }}
               priority={true}
               className="lg:mt-5"
             ></Image>
