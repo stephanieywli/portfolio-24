@@ -145,7 +145,7 @@ export default function Page() {
               alt=""
               width={0}
               height={0}
-              sizes="100vw"
+              sizes="50vw"
               style={{ width: "auto", height: "100%", objectFit: "contain" }}
               quality={100}
               priority={true}
