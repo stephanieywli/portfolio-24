@@ -143,6 +143,8 @@ export default function Page() {
               height={0}
               sizes="100vw"
               style={{ width: "auto", height: "100%" }}
+              priority={true}
+              placeholder="blur"
               className="lg:mt-5"
             ></Image>
           </div>
