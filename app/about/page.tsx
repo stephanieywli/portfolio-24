@@ -7,6 +7,7 @@ import Triangle from "@/components/icons/triangle";
 import { Typewriter } from "react-simple-typewriter";
 import Loader from "@/components/transitions/loader";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const awards = [
   { title: "Awards" },
@@ -82,6 +83,9 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <link rel="preload" href="/1.svg" as="image" />
+      </Head>
       <Loader />
       <div
         id="content"
