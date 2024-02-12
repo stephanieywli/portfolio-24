@@ -82,6 +82,7 @@ const config: Config = {
     extend: {
       screens: {
         '3xl': '1900px',
+        '4k': '2560px',
       },
       fontFamily: {
         garamond: ['var(--font-garamond)'],

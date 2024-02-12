@@ -38,10 +38,10 @@ export default function Home() {
             className="flex flex-col max-w-[100%] items-center"
           >
             <div className="flex flex-row items-end justify-center justify-self-center self-center align-text-bottom">
-              <h1 className="font-garamond text-[4rem] sm:max-lg:text-[7rem] lg:max-xl:text-[9rem] xl:text-[10rem] font-extralight italic capitalize">
+              <h1 className="font-garamond text-[4rem] sm:max-lg:text-[7rem] lg:max-xl:text-[9rem] xl:max-4k:text-[10rem] 4k:text-[15rem] font-extralight italic capitalize">
                 Stephanie
               </h1>
-              <h2 className="text-[3.7rem] sm:pb-1 sm:max-lg:text-[6rem] lg:max-xl:text-[8rem] xl:text-[9rem] italic capitalize">
+              <h2 className="text-[3.7rem] sm:pb-1 sm:max-lg:text-[6rem] lg:max-xl:text-[8rem] xl:max-4k:text-[9rem] 4k:text-[14rem] italic capitalize">
                 Li
               </h2>
             </div>

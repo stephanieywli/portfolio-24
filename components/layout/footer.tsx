@@ -23,18 +23,18 @@ const Footer = () => {
         className="hidden lg:flex flex-row self-end justify-self-end w-screen h-[auto] max-h-[70vh] max-w-[100%] overflow-hidden justify-between"
       >
         <div className="flex flex-col">
-          <div className="group ml-[2.5vw] my-[20vh] font-garamond text-[8.5rem] xl:text-[10rem] italic font-light text-red letter-spacing-[-1vw] leading-[100%] text-nowrap">
+          <div className="group ml-[2.5vw] my-[20vh] font-garamond text-[8.5rem] xl:max-4k:text-[10rem] 4k:text-[15rem] italic font-light text-red letter-spacing-[-1vw] leading-[100%] text-nowrap">
             let&apos;s connect!
           </div>
           <Link
             href=""
-            className="ml-[2.5vw] mb-5 leading-[100%] text-nowrap hover:opacity-70 hover:italic"
+            className="ml-[2.5vw] mb-5 4k:mb-6 text-nowrap hover:opacity-70 hover:italic"
             onClick={() => lenis.scrollTo("top", { lerp: 0.08, lock: true })}
           >
             RETURN TO TOP ⇧
           </Link>
         </div>
-        <div className="flex flex-row items-center justify-center overflow-hidden bg-red min-w-fit w-[30vw] pl-20 pr-40 -mr-[2vw] relative rounded-t-full">
+        <div className="flex flex-row items-center justify-center overflow-hidden bg-red min-w-fit w-[30vw] 4k:w-[32vw] pl-20 pr-40 -mr-[2vw] relative rounded-t-full">
           <div className="flex flex-col h-[auto] items-end gap-2 mr-[25%] tracking-[0.085em] uppercase underline-offset-4 z-10">
             {links.map((link) => (
               <Link
@@ -72,7 +72,7 @@ const Footer = () => {
         id="footer-mobile"
         className="lg:hidden flex flex-col self-end justify-self-end items-center w-screen h-fit max-h-[70vh] max-w-[100%] pt-40 pb-5 overflow-hidden bg-red relative rounded-t-full"
       >
-        <div className="font-garamond text-[5rem] sm:text-[6rem] xl:text-[10rem] italic font-light letter-spacing-[-1vw] leading-[100%] text-nowrap">
+        <div className="font-garamond text-[5rem] sm:text-[6rem] italic font-light letter-spacing-[-1vw] leading-[100%] text-nowrap">
           let&apos;s connect!
         </div>
         <div className="items-center flex flex-col h-[auto] w-fit gap-2 pt-10 tracking-[0.085em] uppercase underline-offset-4 z-10">

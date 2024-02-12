@@ -12,7 +12,7 @@ const Marquee = () => {
     <div
       id="marquee"
       className="flex items-center justify-start h-[10vh] lg:max-2xl:h-[15vh] 2xl:h-[18vh] mb-[5vh] relative select-none text-grey whitespace-nowrap 
-      font-garamond font-light text-[8rem] lg:max-2xl:text-[10rem] 2xl:text-[11.5rem] 
+      font-garamond font-light text-[8rem] lg:max-2xl:text-[10rem] 2xl:max-4k:text-[11.5rem] 4k:text-[15rem]
       italic letter-spacing-[-1vw] leading-[100%] text-nowrap"
     >
       <div

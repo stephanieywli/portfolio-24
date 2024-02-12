@@ -2,7 +2,7 @@ import React from "react";
 
 const Gradient = () => {
   return (
-    <div className="bg-gradient-png bg-no-repeat w-screen h-full min-h-[100%] min-w-[100%] max-w-[100%] mix-blend-difference absolute -z-50"></div>
+    <div className="bg-gradient-png bg-cover min-w-full min-h-full mix-blend-difference absolute -z-50"></div>
   );
 };
 

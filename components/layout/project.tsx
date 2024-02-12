@@ -36,9 +36,9 @@ export default function Project({ project }: any) {
       <Link
         href={`/projects/${slug}`}
         onClick={() => lenis.scrollTo("top", { lerp: 0.08, lock: true })}
-        className="flex flex-row items-center justify-start text-[2rem] sm:max-lg:text-[4rem] lg:text-[6rem]
+        className="flex flex-row items-center justify-start text-[2rem] sm:max-lg:text-[4rem] lg:max-4k:text-[6rem] 4k:text-[8.5rem]
          hover:text-grey hover:font-light hover:italic hover:font-garamond hover:tracking-wide 
-         hover:text-[2.25rem] sm:max-lg:hover:text-[4.5rem] lg:hover:text-[6.5rem]
+         hover:text-[2.25rem] sm:max-lg:hover:text-[4.5rem] lg:max-4k:hover:text-[6.5rem] 4k:hover:text-[9rem]
          "
         onMouseEnter={() => {
           setIsActive(true);

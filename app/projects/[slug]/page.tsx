@@ -28,7 +28,7 @@ export default function Page(props: any) {
       <div className="flex flex-col lg:flex-row lg:justify-between w-screen text-black tracking-wider">
         <div
           id="content-left"
-          className="flex flex-col gap-4 w-full lg:w-[35vw] lg:h-full lg:fixed py-40 px-10 items-start bg-grey-100"
+          className="flex flex-col gap-4 4k:gap-10 w-full lg:w-[35vw] lg:h-full lg:fixed py-40 px-10 items-start bg-grey-100"
         >
           <h1 className="font-garamond font-light text-[5rem] leading-none -mt-4 -ml-[2px]">
             {proj.data.title}
@@ -77,7 +77,7 @@ export default function Page(props: any) {
       </div>
       <div
         id="content-right"
-        className="flex flex-col gap-4 w-full lg:w-[65vw] items-start justify-start pb-44 lg:py-44 px-10 lg:px-20 lg:absolute lg:right-0 lg:top-0 bg-grey-100"
+        className="flex flex-col gap-4 4k:gap-10 w-full lg:w-[65vw] items-start justify-start pb-44 lg:py-44 px-10 lg:px-20 lg:absolute lg:right-0 lg:top-0 bg-grey-100"
       >
         <div className="flex w-full h-fit overflow-hidden items-center justify-start">
           <Image
@@ -89,7 +89,7 @@ export default function Page(props: any) {
             style={{ width: "100%", height: "auto", objectFit: "contain" }}
           ></Image>
         </div>
-        <article className="prose sm:prose-lg prose-a:text-[#237BFF] text-black max-w-none lg:max-w-[80%] tracking-wider">
+        <article className="prose sm:max-4k:prose-lg 4k:prose-2xl prose-a:text-[#237BFF] text-black max-w-none lg:max-w-[80%] tracking-wider">
           <Markdown>{proj.content}</Markdown>
         </article>
         <p className="absolute bottom-0 my-8 py-3 w-[80vw] lg:w-[90%] border-b text-black leading-none italic opacity-20">

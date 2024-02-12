@@ -12,7 +12,9 @@ export default function Preloader() {
       <div className="flex flex-col items-center">
         <div className="overflow-hidden">
           <motion.div
-            className="-mr-3 font-garamond italic font-extralight text-[8rem] sm:max-lg:text-[9rem] lg:text-[10rem] tracking-wider leading-[8rem]"
+            className="-mr-3 font-garamond italic font-extralight 
+            text-[8rem] sm:max-lg:text-[9rem] lg:max-4k:text-[10rem] 4k:text-[15rem]
+            tracking-wider leading-[8rem] 4k:leading-[13.5rem]"
             variants={item}
             initial="hidden"
             exit="visible"
@@ -22,7 +24,8 @@ export default function Preloader() {
         </div>
         <div className="overflow-hidden">
           <motion.div
-            className="text-[1.8rem] sm:text-[2rem] font-semibold tracking-wider uppercase leading-[3rem] text-grey"
+            className="text-[1.8rem] sm:max-4k:text-[2rem] 4k:text-[3.2rem]
+             font-semibold tracking-wider uppercase leading-[3rem] text-grey"
             variants={item}
             initial="hidden"
             exit="visible"

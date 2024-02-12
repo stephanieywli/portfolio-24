@@ -9,7 +9,7 @@ export default function Triangle() {
       width={10}
       height={10}
       style={{ width: "0.7rem", height: "0.7rem" }}
-      className="self-start my-[0.4rem]"
+      className="self-center mb-1"
     ></Image>
   );
 }

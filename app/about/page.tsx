@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import Cursor from "@/components/layout/cursor";
 import Footer from "@/components/layout/footer";
 import Image from "next/image";
+import Link from "next/link";
 import Triangle from "@/components/icons/triangle";
 import { Typewriter } from "react-simple-typewriter";
 import Loader from "@/components/transitions/loader";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import { useLenis } from "@studio-freight/react-lenis";
 
 const awards = [
   { title: "Awards" },
@@ -81,6 +83,8 @@ export default function Page() {
     }, 300);
   }, []);
 
+  const lenis = useLenis(({ scroll }) => {});
+
   return (
     <>
       <Head>
@@ -94,14 +98,17 @@ export default function Page() {
         <Cursor />
         <section
           id="background-section"
-          className="flex flex-col gap-6 lg:flex-row w-screen lg:h-screen pt-[20vh] pb-[10vh] px-4 items-end justify-between text-grey-red"
+          className="flex flex-col lg:flex-row w-screen lg:h-screen pt-[20vh] pb-[10vh] px-4 items-end justify-between text-grey-red"
         >
-          <div className="flex flex-col lg:flex-row lg:w-[60vw] items-start gap-6">
-            <div id="about-section-title" className="gap-2">
+          <div
+            id="1A"
+            className="flex flex-col lg:flex-row lg:w-[60vw] items-start gap-6 4k:gap-20  -red"
+          >
+            <div id="about-section-title" className="gap-2 4k:gap-4 ">
               <Triangle />
-              Background
+              <p>Background</p>
             </div>
-            <div className="flex flex-col justify-between w-fit lg:w-[40vw] h-full">
+            <div className="flex flex-col justify-between w-fit lg:w-[40vw] h-full ">
               <div
                 className="font-garamond font-light 
               text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]
@@ -139,17 +146,20 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="flex lg:w-full items-center h-[50vh] lg:h-[60vh] justify-center my-10 lg:my-0">
+          <div
+            id="1B"
+            className="flex w-[55vw] sm:max-md:w-[45vw] md:max-lg:w-[40vw] lg:w-[25vw] items-end self-end justify-center relative sm:max-lg:mr-5 lg:max-xl:mr-10 xl:max-4k:mr-20 4k:mr-40"
+          >
             <Image
               src="/Profile8.webp"
               alt=""
               width={0}
               height={0}
-              sizes="50vw"
-              style={{ width: "auto", height: "100%", objectFit: "contain" }}
+              sizes="100%"
+              style={{ width: "100%", height: "auto", objectFit: "contain" }}
               quality={100}
               priority={true}
-              className="lg:mt-5 rounded-full -z-10 xl:-mr-32 xl:-mb-10"
+              className="rounded-full -z-10 lg:-mb-6"
             ></Image>
           </div>
         </section>
@@ -166,21 +176,24 @@ export default function Page() {
             <p className="">084</p>
             <p className="">c30</p>
           </div>
-          <div className="flex flex-col gap-6 lg:flex-row w-[100%] items-start justify-between max-h-fit ">
-            <div id="about-section-title" className=" gap-2 whitespace-nowrap">
+          <div className="flex flex-col gap-6 4k:gap-20 lg:flex-row w-[100%] items-start justify-between h-fit ">
+            <div
+              id="about-section-title"
+              className="gap-2 4k:gap-4 w-[10vw] whitespace-nowrap "
+            >
               <Triangle />
               What I do
             </div>
             <div
               className="flex flex-col w-[40vw] font-garamond font-light 
             text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]
-            italic text-off-white leading-none -mt-4"
+            italic text-off-white leading-none -mt-4 "
             >
               {roles.map((role) => (
                 <p key={role.title}>{role.title}</p>
               ))}
             </div>
-            <div className="flex flex-row lg:w-[45vw] self-end justify-end items-end gap-x-40 lg:pr-40 text-grey">
+            <div className="flex flex-row lg:w-[45vw] self-end justify-end items-end gap-x-40 lg:pr-40 text-grey ">
               <div className="flex flex-col">
                 {skillsDes.map((skill) => (
                   <p key={skill.tool}>{skill.tool}</p>
@@ -196,37 +209,48 @@ export default function Page() {
         </section>
         <section
           id="personal-section"
-          className="flex flex-row h-screen w-screen min-w-screen min-h-screen lg:h-screen px-4 py-[20vh] relative "
+          className="flex flex-row h-screen w-screen min-w-screen min-h-screen lg:h-screen px-4 py-[20vh] relative  "
         >
-          <div className="flex flex-col gap-6 lg:flex-row w-full h-full justify-between items-start">
-            <div id="about-section-title" className="gap-2">
-              <Triangle />
-              ME
-            </div>
-            <div className="flex flex-col justify-between lg:w-fit h-full ">
+          <div className="flex flex-col gap-6 4k:gap-20 lg:flex-row w-full h-full justify-between items-start">
+            <div className="flex flex-col gap-6 4k:gap-20 lg:flex-row w-fit h-full justify-start items-start ">
               <div
-                className="max-w-fit font-garamond font-light 
-              text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]              
-              italic text-off-white leading-none -mt-4 capitalize"
+                id="about-section-title"
+                className="gap-2 4k:gap-4 whitespace-nowrap "
               >
-                In my spare time
+                <Triangle />
+                ME
               </div>
-              <div className="flex flex-row justify-end sm:justify-between gap-10 w-full h-fit leading-snug text-grey">
-                <div className="flex flex-col italic">Simple Pleasures...</div>
-                <div className="flex flex-col lowercase">
-                  {hobbies.map((hobby) => (
-                    <p key={hobby.title}>{hobby.title}</p>
-                  ))}
+              <div className="flex flex-col justify-between lg:w-fit h-full ">
+                <div
+                  className="max-w-fit font-garamond font-light
+                text-[4.5rem] lg:max-2xl:text-[4rem] 2xl:max-3xl:text-[5.5rem] 3xl:text-[6.5rem]
+                italic text-off-white leading-none -mt-4 capitalize"
+                >
+                  In my spare time
+                </div>
+                <div className="flex flex-row justify-end sm:justify-between gap-10 w-full h-fit leading-snug text-grey">
+                  <div className="flex flex-col italic">
+                    Simple Pleasures...
+                  </div>
+                  <div className="flex flex-col lowercase">
+                    {hobbies.map((hobby) => (
+                      <p key={hobby.title}>{hobby.title}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="absolute right-0 -z-10 lg:static flex lg:h-full w-full lg:w-[50vw] items-center justify-center-red ">
+            <div className=" absolute right-0 -z-10 lg:static flex lg:h-full w-full lg:w-[50vw] items-center justify-center ">
               <Earth />
             </div>
           </div>
         </section>
         <section className="flex min-h-[70vh] items-center justify-center  text-grey italic">
-          <div className="-mt-60 text-right">
+          <Link
+            href=""
+            className="-mt-60 text-right hover:opacity-70"
+            onClick={() => lenis.scrollTo("bottom", { lerp: 0.1, lock: true })}
+          >
             <Typewriter
               words={["Interested in working together?"]}
               loop={0}
@@ -236,7 +260,7 @@ export default function Page() {
               deleteSpeed={30}
               delaySpeed={2000}
             />
-          </div>
+          </Link>
         </section>
       </div>
       <Footer />

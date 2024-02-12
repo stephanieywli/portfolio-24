@@ -32,7 +32,7 @@ const Nav = () => {
   const path = usePathname();
 
   return (
-    <div className="flex flex-row w-screen px-4 py-3 backdrop-blur-[0.75px] justify-between bg-green bg-opacity-10 uppercase tracking-wider sm:text-[1rem] border-b fixed z-50">
+    <div className="flex flex-row w-screen px-4 py-3 backdrop-blur-[0.75px] justify-between bg-green bg-opacity-10 uppercase tracking-wider sm:max-4k:text-[1rem] 4k:text-[1.5rem] border-b fixed z-50">
       <Link href="/" className="w-fit">
         <p className="hidden md:block">PORTFOLIO 24&apos; ©</p>
         <p className="md:hidden">SYL 24&apos; ©</p>
