@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${Garamond.variable} ${Neue.variable} bg-off-white text-off-white font-neue font-normal text-[0.9rem] sm:text-[1.1rem] antialiased select-none overscroll-none overflow-x-hidden relative`}
+        className={`${Garamond.variable} ${Neue.variable} bg-green text-off-white font-neue font-normal text-[0.9rem] sm:text-[1.1rem] antialiased select-none overscroll-none overflow-x-hidden relative`}
       >
-        <Gradient />
+        {/* <Gradient /> */}
         <Background />
         <Nav />
         <SmoothScroll>{children}</SmoothScroll>
