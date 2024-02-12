@@ -98,7 +98,8 @@ export default function Page() {
         <Cursor />
         <section
           id="background-section"
-          className="flex flex-col lg:flex-row w-screen lg:h-screen pt-[20vh] pb-[10vh] px-4 items-end justify-between text-grey-red"
+          className="flex flex-col lg:flex-row w-screen lg:h-screen 
+          pt-[20vh] pb-[10vh] px-4 4k:px-10 items-end justify-between"
         >
           <div
             id="1A"
@@ -165,7 +166,7 @@ export default function Page() {
         </section>
         <section
           id="skills-section"
-          className="flex min-w-screen min-h-screen lg:h-screen items-center px-4 relative"
+          className="flex min-w-screen min-h-screen lg:h-screen items-center px-4 4k:px-10 relative"
         >
           <div
             id="background text"
@@ -209,7 +210,7 @@ export default function Page() {
         </section>
         <section
           id="personal-section"
-          className="flex flex-row h-screen w-screen min-w-screen min-h-screen lg:h-screen px-4 py-[20vh] relative  "
+          className="flex flex-row h-screen w-screen min-w-screen min-h-screen lg:h-screen px-4 4k:px-10 py-[20vh] relative  "
         >
           <div className="flex flex-col gap-6 4k:gap-20 lg:flex-row w-full h-full justify-between items-start">
             <div className="flex flex-col gap-6 4k:gap-20 lg:flex-row w-fit h-full justify-start items-start ">
