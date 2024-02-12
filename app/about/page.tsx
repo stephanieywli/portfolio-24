@@ -86,12 +86,12 @@ export default function Page() {
       <Head>
         <link rel="preload" href="/1.svg" as="image" />
       </Head>
-      {/* <Loader /> */}
+      <Loader />
       <div
         id="content"
         className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] overflow-hidden relative"
       >
-        {/* <Cursor /> */}
+        <Cursor />
         <section
           id="background-section"
           className="flex flex-col gap-6 lg:flex-row w-screen lg:h-screen pt-[20vh] pb-[10vh] px-4 items-end justify-between text-grey-red"
