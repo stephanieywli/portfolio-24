@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* <Gradient /> */}
         <Background />
         <Nav />
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
       </body>
     </html>
   );
