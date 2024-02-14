@@ -3,9 +3,11 @@ import { Garamond, Neue } from "@/utils/customFonts";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from "../components/layout/SmoothScroll";
-import Gradient from "@/components/layout/gradient";
 import Background from "@/components/layout/background";
 import Nav from "@/components/layout/nav";
+import Gradient from "@/components/layout/gradient";
+import { useLenis } from "@studio-freight/react-lenis";
+
 import "./globals.css";
 
 export const metadata: Metadata = {

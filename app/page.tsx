@@ -9,7 +9,6 @@ import Footer from "@/components/layout/footer";
 import { Typewriter } from "react-simple-typewriter";
 import { AnimatePresence } from "framer-motion";
 import { projects } from "@/components/projects";
-import "./globals.css";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

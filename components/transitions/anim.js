@@ -15,6 +15,9 @@ export const fadeIn = {
     show: {
         opacity:1,
         transition: {duration: 2, ease:[0, 0, 0.2, 1], delay:0}
+    },
+    exit: {
+        opacity: 0,
     }
 }
 
