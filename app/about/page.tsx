@@ -90,8 +90,7 @@ export default function Page() {
       <Head>
         <link rel="preload" href="/1.svg" as="image" />
       </Head>
-      {/* <Loader /> */}
-      <div className="w-screen h-full bg-green bg-cover absolute -z-50"></div>
+      <Loader />
       <div
         id="content"
         className="w-screen h-auto min-h-screen min-w-screen max-w-[100%] overflow-hidden relative"
