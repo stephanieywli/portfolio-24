@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from "../components/layout/SmoothScroll";
 import Background from "@/components/layout/background";
+import Gradient from "@/components/layout/gradient";
 import Nav from "@/components/layout/nav";
 
 import "./globals.css";
