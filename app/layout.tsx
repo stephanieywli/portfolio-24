@@ -5,8 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from "../components/layout/SmoothScroll";
 import Background from "@/components/layout/background";
 import Nav from "@/components/layout/nav";
-import Gradient from "@/components/layout/gradient";
-import { useLenis } from "@studio-freight/react-lenis";
 
 import "./globals.css";
 
